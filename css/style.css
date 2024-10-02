@@ -1,0 +1,92 @@
+body {
+
+  display: flex;
+  justify-content: center;
+  /* 100vh = toda la altura de nuestro monitor */
+  height: 100vh;
+  /* para alinear nuestro contenido de forma vertical */
+  align-items: center;
+  background-color: #141414;
+  margin: 0;
+  font-family: "Inconsolata", Arial, Helvetica, sans-serif;
+  color: rgb(0, 255, 64);
+}
+
+h1{
+  color: #ffffff;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Asegúrate de que el contenedor tenga altura */
+  text-align: center; /* Opcional: centra el texto */
+}
+
+.circular-img {
+  width: 150px; /* Ajusta el tamaño de la imagen según sea necesario */
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px; /* Espacio entre la imagen y el nombre */
+}
+
+.button-social {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Espacio entre los botones */
+  border-radius: 15px; /* Ajusta el valor según el nivel de redondez deseado */
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 30px;
+}
+
+.card {
+  background-color: #1e1e1e;
+  color: #00ff6a;
+  padding: 50px;
+  margin: 20px 0;
+  width:50%;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+#github-button,
+#linkedin-button,
+#facebook-button,
+#instagram-button,
+#youtube-button {
+  background-color: #323232; /* Color base de fondo */
+  color: #ffffff; /* Color del texto */
+  padding: 15px 30px; /* Espaciado más amplio */
+  border-radius: 10px; /* Bordes redondeados */
+  font-weight: 700; /* Negrita */
+  cursor: pointer; /* Cambia el cursor al pasar por encima */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+  transition: all 0.3s ease; /* Suavidad en las transiciones */
+  border: 2px solid transparent; /* Borde invisible inicialmente */
+  font-size: 15px;
+  
+}
+#github-button {
+  background-color: #333333; /* GitHub en gris oscuro */
+}
+
+#linkedin-button {
+  background-color: #0077B5; /* LinkedIn en azul */
+}
+
+#facebook-button {
+  background-color: #3b5998; /* Facebook en azul más oscuro */
+}
+
+#instagram-button {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%); /* Gradiente para Instagram */
+}
+
+#youtube-button {
+  background-color: #FF0000; /* YouTube en rojo */
+}
